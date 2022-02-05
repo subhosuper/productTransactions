@@ -4,9 +4,10 @@ from utils.load_from_file import products, transactions
 from utils.utility import get_product_name
 
 class Transaction(Resource):
+    """
+        API class returns a particular transaction from its transaction id
+    """
     def get(self, transaction_id):
-        print(transaction_id, " ", type(transaction_id))
-        # print(transactions)
         try:
             for transaction in transactions:
                 if transaction["transactionId"] == transaction_id:

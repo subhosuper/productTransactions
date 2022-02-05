@@ -6,6 +6,9 @@ from utils.load_from_file import products, transactions
 from utils.utility import get_product_name, find_by, data_n_days
 
 class FindByProducts(Resource):
+    """
+        API class finds by product from the transaction records
+    """
     def get(self, last_n_days):
         find_by_attribute = "productName"
         try:
@@ -19,6 +22,9 @@ class FindByProducts(Resource):
 
 
 class FindByCity(Resource):
+    """
+        API class finds by city from the transaction records
+    """
     def get(self, last_n_days):
         find_by_attribute = "productManufacturingCity"
         try:
