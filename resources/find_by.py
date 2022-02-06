@@ -1,5 +1,3 @@
-from gettext import find
-from types import new_class
 from flask_restful import Resource
 
 from utils.load_from_file import products, transactions
